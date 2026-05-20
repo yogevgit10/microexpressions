@@ -1,0 +1,141 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MicroExp: smoke test",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "smoke-test",
+        "--video-dir",
+        "C:\\Users\\gitya\\Downloads\\Micro Exp Papers",
+        "--out-dir",
+        "${workspaceFolder}\\results"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: smoke test + DeepFace",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "smoke-test",
+        "--video-dir",
+        "C:\\Users\\gitya\\Downloads\\Micro Exp Papers",
+        "--out-dir",
+        "${workspaceFolder}\\results",
+        "--deepface"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: run all setup",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "run-all",
+        "--video-dir",
+        "C:\\Users\\gitya\\Downloads\\Micro Exp Papers",
+        "--out-dir",
+        "${workspaceFolder}\\results",
+        "--every-s",
+        "5"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: analyze annotated trials",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "analyze",
+        "--out-dir",
+        "${workspaceFolder}\\results"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: extract short video 100fps",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "extract-all",
+        "--video-dir",
+        "C:\\Users\\gitya\\Downloads\\Micro Exp Papers",
+        "--out-dir",
+        "${workspaceFolder}\\results",
+        "--video-id",
+        "2026-01-08_10-25-28",
+        "--target-fps",
+        "100",
+        "--deepface",
+        "--force"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: extract all 100fps",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "extract-all",
+        "--video-dir",
+        "C:\\Users\\gitya\\Downloads\\Micro Exp Papers",
+        "--out-dir",
+        "${workspaceFolder}\\results",
+        "--target-fps",
+        "100",
+        "--deepface"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: analyze annotated trials + DeepFace",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "analyze",
+        "--out-dir",
+        "${workspaceFolder}\\results",
+        "--deepface"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: rebuild report",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "microexp.cli",
+        "report",
+        "--out-dir",
+        "${workspaceFolder}\\results"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "MicroExp: event tests",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "tests\\test_events.py"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

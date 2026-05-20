@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../../../Downloads"
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+      "${workspaceFolder}",
+      "c:\\Users\\gitya\\.vscode\\extensions\\ms-security.ms-sentinel-2.1.0\\python"
+    ]
+  }
+}

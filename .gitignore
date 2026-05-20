@@ -1,0 +1,20 @@
+.venv/
+.snapshots/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.log
+
+# Local caches and downloaded model weights
+models/deepface/
+
+# Raw/visual participant material should stay local unless explicitly approved.
+results/contact_sheets/
+results/smoke_contact_sheet.jpg
+
+# Source videos are intentionally kept outside the repository.
+*.mp4
+*.mov
+*.avi
