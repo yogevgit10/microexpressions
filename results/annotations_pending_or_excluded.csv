@@ -1,0 +1,9 @@
+video_id,source_path,trial_id,approach_onset_s,sniff_onset_s,sniff_offset_s,response_s,occlusion_notes,quality_flag
+2025-12-28_14-03-58,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-28 14-03-58.mp4,1,,,,,,pending
+2025-12-28_14-03-58,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-28 14-03-58.mp4,2,,,,,,pending
+2026-01-08_10-25-28,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-08 10-25-28.mp4,1,,,,,,pending
+2026-01-08_10-25-28,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-08 10-25-28.mp4,2,,,,,,pending
+2026-01-20_14-38-34_Ariella,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-38-34 Ariella.mp4,1,,,,,problematic video,exclude
+2026-01-20_14-38-34_Ariella,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-38-34 Ariella.mp4,2,,,,,problematic video,exclude
+2026-01-20_14-44-42_Maya,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-44-42 Maya.mp4,1,,,,,,pending
+2026-01-20_14-44-42_Maya,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-44-42 Maya.mp4,2,,,,,,pending

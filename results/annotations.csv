@@ -1,31 +1,15 @@
 video_id,source_path,trial_id,approach_onset_s,sniff_onset_s,sniff_offset_s,response_s,occlusion_notes,quality_flag
-2025-12-23_14-26-24_Orna_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-26-24 Orna 1.mp4,1,,,,,,pending
-2025-12-23_14-26-24_Orna_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-26-24 Orna 1.mp4,2,,,,,,pending
-2025-12-23_14-33-37_Roy_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-33-37 Roy 1.mp4,1,,,,,,pending
-2025-12-23_14-33-37_Roy_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-33-37 Roy 1.mp4,2,,,,,,pending
-2025-12-23_14-37-45_Marina_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-37-45 Marina 1.mp4,1,,,,,,pending
-2025-12-23_14-37-45_Marina_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-37-45 Marina 1.mp4,2,,,,,,pending
-2025-12-23_14-40-26_Maya_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-40-26 Maya 1.mp4,1,,,,,,pending
-2025-12-23_14-40-26_Maya_1,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-23 14-40-26 Maya 1.mp4,2,,,,,,pending
-2025-12-28_14-03-58,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-28 14-03-58.mp4,1,,,,,,pending
-2025-12-28_14-03-58,C:\Users\gitya\Downloads\Micro Exp Papers\2025-12-28 14-03-58.mp4,2,,,,,,pending
-2026-01-08_10-25-28,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-08 10-25-28.mp4,1,,,,,,pending
-2026-01-08_10-25-28,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-08 10-25-28.mp4,2,,,,,,pending
-2026-01-20_14-38-34_Ariella,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-38-34 Ariella.mp4,1,,,,,,pending
-2026-01-20_14-38-34_Ariella,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-38-34 Ariella.mp4,2,,,,,,pending
-2026-01-20_14-44-42_Maya,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-44-42 Maya.mp4,1,,,,,,pending
-2026-01-20_14-44-42_Maya,C:\Users\gitya\Downloads\Micro Exp Papers\2026-01-20 14-44-42 Maya.mp4,2,,,,,,pending
-P1H31277,C:\Users\gitya\Downloads\Micro Exp Papers\P1H31277.mp4,1,,,,,,pending
-P1H31277,C:\Users\gitya\Downloads\Micro Exp Papers\P1H31277.mp4,2,,,,,,pending
-P1H42065,C:\Users\gitya\Downloads\Micro Exp Papers\P1H42065.mp4,1,,,,,,pending
-P1H42065,C:\Users\gitya\Downloads\Micro Exp Papers\P1H42065.mp4,2,,,,,,pending
-P1L42069,C:\Users\gitya\Downloads\Micro Exp Papers\P1L42069.mp4,1,,,,,,pending
-P1L42069,C:\Users\gitya\Downloads\Micro Exp Papers\P1L42069.mp4,2,,,,,,pending
-P2H31220,C:\Users\gitya\Downloads\Micro Exp Papers\P2H31220.mp4,1,,,,,,pending
-P2H31220,C:\Users\gitya\Downloads\Micro Exp Papers\P2H31220.mp4,2,,,,,,pending
-P2H42009,C:\Users\gitya\Downloads\Micro Exp Papers\P2H42009.mp4,1,,,,,,pending
-P2H42009,C:\Users\gitya\Downloads\Micro Exp Papers\P2H42009.mp4,2,,,,,,pending
-P2L40002,C:\Users\gitya\Downloads\Micro Exp Papers\P2L40002.mp4,1,,,,,,pending
-P2L40002,C:\Users\gitya\Downloads\Micro Exp Papers\P2L40002.mp4,2,,,,,,pending
-P2L42107,C:\Users\gitya\Downloads\Micro Exp Papers\P2L42107.mp4,1,,,,,,pending
-P2L42107,C:\Users\gitya\Downloads\Micro Exp Papers\P2L42107.mp4,2,,,,,,pending
+P1H31277,C:\Users\gitya\Downloads\Micro Exp Papers\P1H31277.mp4,1,,15,,,,ok
+P1H31277,C:\Users\gitya\Downloads\Micro Exp Papers\P1H31277.mp4,2,,172,,,,ok
+P1H42065,C:\Users\gitya\Downloads\Micro Exp Papers\P1H42065.mp4,1,,11,,,,ok
+P1H42065,C:\Users\gitya\Downloads\Micro Exp Papers\P1H42065.mp4,2,,162,,,,ok
+P1L42069,C:\Users\gitya\Downloads\Micro Exp Papers\P1L42069.mp4,1,,14,,,,ok
+P1L42069,C:\Users\gitya\Downloads\Micro Exp Papers\P1L42069.mp4,2,,177,,,,ok
+P2H31220,C:\Users\gitya\Downloads\Micro Exp Papers\P2H31220.mp4,1,,12,,,,ok
+P2H31220,C:\Users\gitya\Downloads\Micro Exp Papers\P2H31220.mp4,2,,180,,,,ok
+P2H42009,C:\Users\gitya\Downloads\Micro Exp Papers\P2H42009.mp4,1,,13,,,,ok
+P2H42009,C:\Users\gitya\Downloads\Micro Exp Papers\P2H42009.mp4,2,,163,,,,ok
+P2L40002,C:\Users\gitya\Downloads\Micro Exp Papers\P2L40002.mp4,1,,12,,,,ok
+P2L40002,C:\Users\gitya\Downloads\Micro Exp Papers\P2L40002.mp4,2,,190,,,,ok
+P2L42107,C:\Users\gitya\Downloads\Micro Exp Papers\P2L42107.mp4,1,,30,,,,ok
+P2L42107,C:\Users\gitya\Downloads\Micro Exp Papers\P2L42107.mp4,2,,214,,,,ok

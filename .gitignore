@@ -6,6 +6,8 @@ __pycache__/
 .ruff_cache/
 *.py[cod]
 *.log
+~$*.docx
+delivery_package/
 
 # Local caches and downloaded model weights
 models/deepface/

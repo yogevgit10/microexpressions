@@ -1,0 +1,14 @@
+item,value
+total_annotation_rows,38
+total_annotation_videos,15
+two_tube_videos,11
+two_tube_rows,22
+primary_two_tube_videos,7
+primary_two_tube_rows,14
+four_trial_videos,4
+four_trial_rows,16
+pending_or_excluded_two_tube_rows,8
+condition_mapping_rows,22
+annotation_quality_flag_exclude,2
+annotation_quality_flag_ok,30
+annotation_quality_flag_pending,6

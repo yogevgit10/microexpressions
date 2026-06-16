@@ -37,7 +37,8 @@ def _condition_comparisons(
 
     mapping = condition_mapping.copy()
     mapping["condition"] = mapping["condition"].astype(str).str.strip().str.lower()
-    merged = trial_summary.merge(mapping[["video_id", "trial_id", "condition"]], on=["video_id", "trial_id"], how="inner")
+    summary = trial_summary.drop(columns=["condition"], errors="ignore").copy()
+    merged = summary.merge(mapping[["video_id", "trial_id", "condition"]], on=["video_id", "trial_id"], how="inner")
     if merged.empty:
         return None
 
@@ -58,6 +59,8 @@ def _condition_comparisons(
                 continue
             diff = paired["sweat"] - paired["control"]
             t_stat, t_p = stats.ttest_rel(paired["sweat"], paired["control"], nan_policy="omit")
+            diff_sd = float(diff.std(ddof=1)) if len(diff) > 1 else float("nan")
+            dz = float(diff.mean() / diff_sd) if diff_sd and pd.notna(diff_sd) and diff_sd != 0 else float("nan")
             try:
                 if len(paired) >= 3 and diff.abs().sum() > 0:
                     w_stat, w_p = stats.wilcoxon(paired["sweat"], paired["control"])
@@ -73,6 +76,8 @@ def _condition_comparisons(
                     "sweat_mean": float(paired["sweat"].mean()),
                     "control_mean": float(paired["control"].mean()),
                     "mean_diff_sweat_minus_control": float(diff.mean()),
+                    "median_diff_sweat_minus_control": float(diff.median()),
+                    "paired_effect_dz": dz,
                     "paired_t_stat": float(t_stat),
                     "paired_t_p": float(t_p),
                     "wilcoxon_stat": float(w_stat),
@@ -156,10 +161,16 @@ def build_report(out_dir: Path) -> Path:
         },
     )
 
+    condition_line = (
+        "This report uses `condition_mapping.csv` for paired sweat/control comparisons."
+        if condition_mapping is not None
+        else "This report is blind to sweat/control condition unless `condition_mapping.csv` is present."
+    )
+
     lines = [
         "# Micro-Expression Analysis Report",
         "",
-        "This report is blind to sweat/control condition unless `condition_mapping.csv` is present.",
+        condition_line,
         "",
         "## Inventory",
     ]
@@ -168,12 +179,14 @@ def build_report(out_dir: Path) -> Path:
     else:
         n_videos = len(inventory)
         n_reps = int(inventory.get("representative", pd.Series([True] * n_videos)).astype(bool).sum())
-        n_dup = int(inventory.get("is_duplicate", pd.Series([False] * n_videos)).astype(bool).sum())
+        n_dup_group_members = int(inventory.get("is_duplicate", pd.Series([False] * n_videos)).astype(bool).sum())
+        n_duplicate_excluded = n_videos - n_reps
         lines.extend(
             [
                 f"- Videos listed: {n_videos}",
                 f"- Representative videos for analysis: {n_reps}",
-                f"- Exact duplicate files detected: {n_dup}",
+                f"- Files in exact-duplicate groups: {n_dup_group_members}",
+                f"- Non-representative duplicate files excluded from analysis: {n_duplicate_excluded}",
             ]
         )
         if "duration_s" in inventory:
@@ -235,7 +248,8 @@ def build_report(out_dir: Path) -> Path:
         for row in top.itertuples(index=False):
             lines.append(
                 f"- {row.window} / {row.feature}: n={row.n_pairs}, "
-                f"mean diff={row.mean_diff_sweat_minus_control:.4g}, paired t p={row.paired_t_p:.4g}"
+                f"mean diff={row.mean_diff_sweat_minus_control:.4g}, "
+                f"dz={row.paired_effect_dz:.3g}, paired t p={row.paired_t_p:.4g}"
             )
 
     if figures:
